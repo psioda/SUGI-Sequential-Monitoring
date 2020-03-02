@@ -1,0 +1,2933 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.aftercaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FAFBFE;
+  border: 1pt solid #000000;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #EDF2F9;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.heading1
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading2
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading3
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading4
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading5
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading6
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.index
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FAFBFE;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.list
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warnbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</table><br>
+<div class="c byline">borrow=0</div>
+<p/><div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.SIMULATION_RESULTS2">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">borrow</th>
+<th class="r header" scope="col">true_pi</th>
+<th class="r header" scope="col">_FREQ_</th>
+<th class="r header" scope="col">I</th>
+<th class="r header" scope="col">nInt</th>
+<th class="r header" scope="col">y1Int</th>
+<th class="r header" scope="col">y0Int</th>
+<th class="r header" scope="col">nMissInt</th>
+<th class="r header" scope="col">nFin</th>
+<th class="r header" scope="col">y1Fin</th>
+<th class="r header" scope="col">y0Fin</th>
+<th class="r header" scope="col">piHatFin</th>
+<th class="r header" scope="col">a0</th>
+<th class="r header" scope="col">c0</th>
+<th class="r header" scope="col">postprob_skept</th>
+<th class="r header" scope="col">PSE_skept</th>
+<th class="r header" scope="col">PSE_skept2</th>
+<th class="r header" scope="col">postprob_enthu</th>
+<th class="r header" scope="col">PSE_enthu</th>
+<th class="r header" scope="col">durInt</th>
+<th class="r header" scope="col">durFin</th>
+<th class="r header" scope="col">EffInt</th>
+<th class="r header" scope="col">EffFin</th>
+<th class="r header" scope="col">FutInt</th>
+<th class="r header" scope="col">FutFin</th>
+<th class="r header" scope="col">FutCrit1</th>
+<th class="r header" scope="col">FutCrit2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">0</td>
+<td class="r data">0.40</td>
+<td class="r data">10000</td>
+<td class="r data">2.5428</td>
+<td class="r data">23.0856</td>
+<td class="r data">9.2601</td>
+<td class="r data">13.8255</td>
+<td class="r data">3.5744</td>
+<td class="r data">23.1232</td>
+<td class="r data">9.2755</td>
+<td class="r data">13.8477</td>
+<td class="r data">0.38636</td>
+<td class="r data">0</td>
+<td class="r data">0.01097</td>
+<td class="r data">0.50020</td>
+<td class="r data">0.03472</td>
+<td class="r data">0.05867</td>
+<td class="r data">0.65675</td>
+<td class="r data">0.043253</td>
+<td class="r data">14.6823</td>
+<td class="r data">14.7026</td>
+<td class="r data">0.0198</td>
+<td class="r data">0.0196</td>
+<td class="r data">0.9781</td>
+<td class="r data">0.9781</td>
+<td class="r data">0.0143</td>
+<td class="r data">0.9780</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">0</td>
+<td class="r data">0.42</td>
+<td class="r data">10000</td>
+<td class="r data">3.1248</td>
+<td class="r data">24.2496</td>
+<td class="r data">10.1930</td>
+<td class="r data">14.0566</td>
+<td class="r data">3.5041</td>
+<td class="r data">24.3165</td>
+<td class="r data">10.2195</td>
+<td class="r data">14.0970</td>
+<td class="r data">0.40256</td>
+<td class="r data">0</td>
+<td class="r data">0.01921</td>
+<td class="r data">0.54286</td>
+<td class="r data">0.05440</td>
+<td class="r data">0.07612</td>
+<td class="r data">0.62628</td>
+<td class="r data">0.040119</td>
+<td class="r data">15.3081</td>
+<td class="r data">15.3478</td>
+<td class="r data">0.0360</td>
+<td class="r data">0.0356</td>
+<td class="r data">0.9607</td>
+<td class="r data">0.9607</td>
+<td class="r data">0.0089</td>
+<td class="r data">0.9606</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">0</td>
+<td class="r data">0.44</td>
+<td class="r data">10000</td>
+<td class="r data">3.8443</td>
+<td class="r data">25.6886</td>
+<td class="r data">11.2868</td>
+<td class="r data">14.4018</td>
+<td class="r data">3.5045</td>
+<td class="r data">25.8213</td>
+<td class="r data">11.3449</td>
+<td class="r data">14.4764</td>
+<td class="r data">0.41832</td>
+<td class="r data">0</td>
+<td class="r data">0.03083</td>
+<td class="r data">0.58365</td>
+<td class="r data">0.08483</td>
+<td class="r data">0.10196</td>
+<td class="r data">0.59518</td>
+<td class="r data">0.038719</td>
+<td class="r data">16.0585</td>
+<td class="r data">16.1264</td>
+<td class="r data">0.0631</td>
+<td class="r data">0.0629</td>
+<td class="r data">0.9303</td>
+<td class="r data">0.9303</td>
+<td class="r data">0.0081</td>
+<td class="r data">0.9300</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">0</td>
+<td class="r data">0.46</td>
+<td class="r data">10000</td>
+<td class="r data">4.6891</td>
+<td class="r data">27.3782</td>
+<td class="r data">12.6339</td>
+<td class="r data">14.7443</td>
+<td class="r data">3.4042</td>
+<td class="r data">27.6029</td>
+<td class="r data">12.7364</td>
+<td class="r data">14.8665</td>
+<td class="r data">0.43895</td>
+<td class="r data">0</td>
+<td class="r data">0.05317</td>
+<td class="r data">0.63517</td>
+<td class="r data">0.13389</td>
+<td class="r data">0.14304</td>
+<td class="r data">0.55254</td>
+<td class="r data">0.037579</td>
+<td class="r data">16.9812</td>
+<td class="r data">17.0939</td>
+<td class="r data">0.1086</td>
+<td class="r data">0.1082</td>
+<td class="r data">0.8810</td>
+<td class="r data">0.8810</td>
+<td class="r data">0.0047</td>
+<td class="r data">0.8806</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">0</td>
+<td class="r data">0.48</td>
+<td class="r data">10000</td>
+<td class="r data">5.4664</td>
+<td class="r data">28.9328</td>
+<td class="r data">13.9015</td>
+<td class="r data">15.0313</td>
+<td class="r data">3.2885</td>
+<td class="r data">29.2924</td>
+<td class="r data">14.0753</td>
+<td class="r data">15.2171</td>
+<td class="r data">0.45726</td>
+<td class="r data">0</td>
+<td class="r data">0.07976</td>
+<td class="r data">0.67703</td>
+<td class="r data">0.19368</td>
+<td class="r data">0.19432</td>
+<td class="r data">0.51275</td>
+<td class="r data">0.040676</td>
+<td class="r data">17.8251</td>
+<td class="r data">18.0077</td>
+<td class="r data">0.1673</td>
+<td class="r data">0.1665</td>
+<td class="r data">0.8188</td>
+<td class="r data">0.8188</td>
+<td class="r data">0.0039</td>
+<td class="r data">0.8183</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="r data">0</td>
+<td class="r data">0.50</td>
+<td class="r data">10000</td>
+<td class="r data">6.1432</td>
+<td class="r data">30.2864</td>
+<td class="r data">15.1139</td>
+<td class="r data">15.1725</td>
+<td class="r data">3.2149</td>
+<td class="r data">30.8113</td>
+<td class="r data">15.3783</td>
+<td class="r data">15.4330</td>
+<td class="r data">0.47717</td>
+<td class="r data">0</td>
+<td class="r data">0.11731</td>
+<td class="r data">0.72072</td>
+<td class="r data">0.26101</td>
+<td class="r data">0.25094</td>
+<td class="r data">0.46801</td>
+<td class="r data">0.043741</td>
+<td class="r data">18.4787</td>
+<td class="r data">18.7360</td>
+<td class="r data">0.2333</td>
+<td class="r data">0.2326</td>
+<td class="r data">0.7507</td>
+<td class="r data">0.7507</td>
+<td class="r data">0.0022</td>
+<td class="r data">0.7505</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="r data">0</td>
+<td class="r data">0.52</td>
+<td class="r data">10000</td>
+<td class="r data">6.7083</td>
+<td class="r data">31.4166</td>
+<td class="r data">16.3005</td>
+<td class="r data">15.1161</td>
+<td class="r data">3.1274</td>
+<td class="r data">32.1633</td>
+<td class="r data">16.6820</td>
+<td class="r data">15.4813</td>
+<td class="r data">0.49917</td>
+<td class="r data">0</td>
+<td class="r data">0.16652</td>
+<td class="r data">0.76275</td>
+<td class="r data">0.35056</td>
+<td class="r data">0.32889</td>
+<td class="r data">0.41754</td>
+<td class="r data">0.049707</td>
+<td class="r data">19.0678</td>
+<td class="r data">19.4326</td>
+<td class="r data">0.3260</td>
+<td class="r data">0.3244</td>
+<td class="r data">0.6595</td>
+<td class="r data">0.6595</td>
+<td class="r data">0.0014</td>
+<td class="r data">0.6589</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="r data">0</td>
+<td class="r data">0.54</td>
+<td class="r data">10000</td>
+<td class="r data">7.3102</td>
+<td class="r data">32.6204</td>
+<td class="r data">17.5819</td>
+<td class="r data">15.0385</td>
+<td class="r data">3.0316</td>
+<td class="r data">33.6454</td>
+<td class="r data">18.1305</td>
+<td class="r data">15.5149</td>
+<td class="r data">0.52363</td>
+<td class="r data">0</td>
+<td class="r data">0.22529</td>
+<td class="r data">0.80713</td>
+<td class="r data">0.45278</td>
+<td class="r data">0.41540</td>
+<td class="r data">0.36184</td>
+<td class="r data">0.056200</td>
+<td class="r data">19.6984</td>
+<td class="r data">20.2001</td>
+<td class="r data">0.4274</td>
+<td class="r data">0.4264</td>
+<td class="r data">0.5556</td>
+<td class="r data">0.5556</td>
+<td class="r data">0.0007</td>
+<td class="r data">0.5553</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="r data">0</td>
+<td class="r data">0.56</td>
+<td class="r data">10000</td>
+<td class="r data">7.4986</td>
+<td class="r data">32.9972</td>
+<td class="r data">18.5252</td>
+<td class="r data">14.4720</td>
+<td class="r data">2.9460</td>
+<td class="r data">34.3604</td>
+<td class="r data">19.2924</td>
+<td class="r data">15.0680</td>
+<td class="r data">0.55180</td>
+<td class="r data">0</td>
+<td class="r data">0.30525</td>
+<td class="r data">0.84984</td>
+<td class="r data">0.56684</td>
+<td class="r data">0.51622</td>
+<td class="r data">0.29874</td>
+<td class="r data">0.060181</td>
+<td class="r data">19.8822</td>
+<td class="r data">20.5322</td>
+<td class="r data">0.5483</td>
+<td class="r data">0.5475</td>
+<td class="r data">0.4380</td>
+<td class="r data">0.4380</td>
+<td class="r data">0.0007</td>
+<td class="r data">0.4378</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="r data">0</td>
+<td class="r data">0.58</td>
+<td class="r data">10000</td>
+<td class="r data">7.5052</td>
+<td class="r data">33.0104</td>
+<td class="r data">19.1492</td>
+<td class="r data">13.8612</td>
+<td class="r data">2.8743</td>
+<td class="r data">34.6585</td>
+<td class="r data">20.1097</td>
+<td class="r data">14.5488</td>
+<td class="r data">0.57614</td>
+<td class="r data">0</td>
+<td class="r data">0.36772</td>
+<td class="r data">0.88328</td>
+<td class="r data">0.65777</td>
+<td class="r data">0.59978</td>
+<td class="r data">0.24727</td>
+<td class="r data">0.061749</td>
+<td class="r data">19.8353</td>
+<td class="r data">20.6146</td>
+<td class="r data">0.6453</td>
+<td class="r data">0.6442</td>
+<td class="r data">0.3435</td>
+<td class="r data">0.3435</td>
+<td class="r data">0.0003</td>
+<td class="r data">0.3432</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="r data">0</td>
+<td class="r data">0.60</td>
+<td class="r data">10000</td>
+<td class="r data">7.2391</td>
+<td class="r data">32.4782</td>
+<td class="r data">19.4966</td>
+<td class="r data">12.9816</td>
+<td class="r data">2.8520</td>
+<td class="r data">34.4237</td>
+<td class="r data">20.6742</td>
+<td class="r data">13.7495</td>
+<td class="r data">0.60153</td>
+<td class="r data">0</td>
+<td class="r data">0.44024</td>
+<td class="r data">0.91259</td>
+<td class="r data">0.74835</td>
+<td class="r data">0.68351</td>
+<td class="r data">0.19546</td>
+<td class="r data">0.060318</td>
+<td class="r data">19.5013</td>
+<td class="r data">20.4113</td>
+<td class="r data">0.7414</td>
+<td class="r data">0.7407</td>
+<td class="r data">0.2510</td>
+<td class="r data">0.2510</td>
+<td class="r data">0.0003</td>
+<td class="r data">0.2507</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="r data">0</td>
+<td class="r data">0.62</td>
+<td class="r data">10000</td>
+<td class="r data">6.8593</td>
+<td class="r data">31.7186</td>
+<td class="r data">19.6893</td>
+<td class="r data">12.0293</td>
+<td class="r data">2.8648</td>
+<td class="r data">33.9723</td>
+<td class="r data">21.0871</td>
+<td class="r data">12.8852</td>
+<td class="r data">0.62728</td>
+<td class="r data">0</td>
+<td class="r data">0.50533</td>
+<td class="r data">0.94031</td>
+<td class="r data">0.82738</td>
+<td class="r data">0.75771</td>
+<td class="r data">0.14808</td>
+<td class="r data">0.057440</td>
+<td class="r data">19.0351</td>
+<td class="r data">20.0752</td>
+<td class="r data">0.8244</td>
+<td class="r data">0.8238</td>
+<td class="r data">0.1710</td>
+<td class="r data">0.1710</td>
+<td class="r data">0.0001</td>
+<td class="r data">0.1710</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="r data">0</td>
+<td class="r data">0.64</td>
+<td class="r data">10000</td>
+<td class="r data">6.0548</td>
+<td class="r data">30.1096</td>
+<td class="r data">19.2854</td>
+<td class="r data">10.8242</td>
+<td class="r data">2.8900</td>
+<td class="r data">32.5647</td>
+<td class="r data">20.8589</td>
+<td class="r data">11.7058</td>
+<td class="r data">0.64940</td>
+<td class="r data">0</td>
+<td class="r data">0.55435</td>
+<td class="r data">0.95482</td>
+<td class="r data">0.87559</td>
+<td class="r data">0.80775</td>
+<td class="r data">0.11469</td>
+<td class="r data">0.050306</td>
+<td class="r data">18.2037</td>
+<td class="r data">19.3353</td>
+<td class="r data">0.8758</td>
+<td class="r data">0.8751</td>
+<td class="r data">0.1211</td>
+<td class="r data">0.1211</td>
+<td class="r data">0.0004</td>
+<td class="r data">0.1208</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<td class="r data">0</td>
+<td class="r data">0.66</td>
+<td class="r data">10000</td>
+<td class="r data">5.3923</td>
+<td class="r data">28.7846</td>
+<td class="r data">19.0038</td>
+<td class="r data">9.7808</td>
+<td class="r data">2.9488</td>
+<td class="r data">31.4656</td>
+<td class="r data">20.7707</td>
+<td class="r data">10.6949</td>
+<td class="r data">0.67123</td>
+<td class="r data">0</td>
+<td class="r data">0.58317</td>
+<td class="r data">0.96902</td>
+<td class="r data">0.91982</td>
+<td class="r data">0.85237</td>
+<td class="r data">0.08504</td>
+<td class="r data">0.044107</td>
+<td class="r data">17.4808</td>
+<td class="r data">18.6877</td>
+<td class="r data">0.9222</td>
+<td class="r data">0.9212</td>
+<td class="r data">0.0766</td>
+<td class="r data">0.0766</td>
+<td class="r data">0.0000</td>
+<td class="r data">0.0766</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<td class="r data">0</td>
+<td class="r data">0.68</td>
+<td class="r data">10000</td>
+<td class="r data">4.6268</td>
+<td class="r data">27.2536</td>
+<td class="r data">18.5478</td>
+<td class="r data">8.7058</td>
+<td class="r data">2.9621</td>
+<td class="r data">30.0438</td>
+<td class="r data">20.4365</td>
+<td class="r data">9.6073</td>
+<td class="r data">0.69219</td>
+<td class="r data">0</td>
+<td class="r data">0.59347</td>
+<td class="r data">0.97899</td>
+<td class="r data">0.95003</td>
+<td class="r data">0.88570</td>
+<td class="r data">0.06194</td>
+<td class="r data">0.037601</td>
+<td class="r data">16.6224</td>
+<td class="r data">17.8904</td>
+<td class="r data">0.9538</td>
+<td class="r data">0.9535</td>
+<td class="r data">0.0458</td>
+<td class="r data">0.0458</td>
+<td class="r data">0.0000</td>
+<td class="r data">0.0458</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">16</th>
+<td class="r data">0</td>
+<td class="r data">0.70</td>
+<td class="r data">10000</td>
+<td class="r data">3.9338</td>
+<td class="r data">25.8676</td>
+<td class="r data">18.1167</td>
+<td class="r data">7.7509</td>
+<td class="r data">3.0506</td>
+<td class="r data">28.8270</td>
+<td class="r data">20.1850</td>
+<td class="r data">8.6420</td>
+<td class="r data">0.71206</td>
+<td class="r data">0</td>
+<td class="r data">0.58509</td>
+<td class="r data">0.98634</td>
+<td class="r data">0.97011</td>
+<td class="r data">0.91003</td>
+<td class="r data">0.04452</td>
+<td class="r data">0.030835</td>
+<td class="r data">15.9173</td>
+<td class="r data">17.2274</td>
+<td class="r data">0.9740</td>
+<td class="r data">0.9738</td>
+<td class="r data">0.0261</td>
+<td class="r data">0.0261</td>
+<td class="r data">0.0000</td>
+<td class="r data">0.0261</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">17</th>
+<td class="r data">0</td>
+<td class="r data">0.72</td>
+<td class="r data">10000</td>
+<td class="r data">3.3147</td>
+<td class="r data">24.6294</td>
+<td class="r data">17.7218</td>
+<td class="r data">6.9076</td>
+<td class="r data">3.1233</td>
+<td class="r data">27.6964</td>
+<td class="r data">19.9303</td>
+<td class="r data">7.7661</td>
+<td class="r data">0.73013</td>
+<td class="r data">0</td>
+<td class="r data">0.56025</td>
+<td class="r data">0.99046</td>
+<td class="r data">0.98068</td>
+<td class="r data">0.92578</td>
+<td class="r data">0.03306</td>
+<td class="r data">0.024860</td>
+<td class="r data">15.2698</td>
+<td class="r data">16.6205</td>
+<td class="r data">0.9845</td>
+<td class="r data">0.9843</td>
+<td class="r data">0.0155</td>
+<td class="r data">0.0155</td>
+<td class="r data">0.0000</td>
+<td class="r data">0.0155</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">18</th>
+<td class="r data">0</td>
+<td class="r data">0.74</td>
+<td class="r data">10000</td>
+<td class="r data">2.7958</td>
+<td class="r data">23.5916</td>
+<td class="r data">17.4421</td>
+<td class="r data">6.1495</td>
+<td class="r data">3.1860</td>
+<td class="r data">26.7532</td>
+<td class="r data">19.7936</td>
+<td class="r data">6.9596</td>
+<td class="r data">0.74962</td>
+<td class="r data">0</td>
+<td class="r data">0.51237</td>
+<td class="r data">0.99421</td>
+<td class="r data">0.99010</td>
+<td class="r data">0.94041</td>
+<td class="r data">0.02326</td>
+<td class="r data">0.019800</td>
+<td class="r data">14.7557</td>
+<td class="r data">16.1303</td>
+<td class="r data">0.9936</td>
+<td class="r data">0.9936</td>
+<td class="r data">0.0066</td>
+<td class="r data">0.0066</td>
+<td class="r data">0.0000</td>
+<td class="r data">0.0066</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">19</th>
+<td class="r data">0</td>
+<td class="r data">0.76</td>
+<td class="r data">10000</td>
+<td class="r data">2.3010</td>
+<td class="r data">22.6020</td>
+<td class="r data">17.1634</td>
+<td class="r data">5.4386</td>
+<td class="r data">3.2669</td>
+<td class="r data">25.8545</td>
+<td class="r data">19.6454</td>
+<td class="r data">6.2091</td>
+<td class="r data">0.76749</td>
+<td class="r data">0</td>
+<td class="r data">0.45679</td>
+<td class="r data">0.99532</td>
+<td class="r data">0.99242</td>
+<td class="r data">0.94979</td>
+<td class="r data">0.01782</td>
+<td class="r data">0.015165</td>
+<td class="r data">14.2518</td>
+<td class="r data">15.6441</td>
+<td class="r data">0.9953</td>
+<td class="r data">0.9952</td>
+<td class="r data">0.0049</td>
+<td class="r data">0.0049</td>
+<td class="r data">0.0000</td>
+<td class="r data">0.0049</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX1"></a>
+<div class="c byline">borrow=1</div>
+<p/><div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.SIMULATION_RESULTS2">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">borrow</th>
+<th class="r header" scope="col">true_pi</th>
+<th class="r header" scope="col">_FREQ_</th>
+<th class="r header" scope="col">I</th>
+<th class="r header" scope="col">nInt</th>
+<th class="r header" scope="col">y1Int</th>
+<th class="r header" scope="col">y0Int</th>
+<th class="r header" scope="col">nMissInt</th>
+<th class="r header" scope="col">nFin</th>
+<th class="r header" scope="col">y1Fin</th>
+<th class="r header" scope="col">y0Fin</th>
+<th class="r header" scope="col">piHatFin</th>
+<th class="r header" scope="col">a0</th>
+<th class="r header" scope="col">c0</th>
+<th class="r header" scope="col">postprob_skept</th>
+<th class="r header" scope="col">PSE_skept</th>
+<th class="r header" scope="col">PSE_skept2</th>
+<th class="r header" scope="col">postprob_enthu</th>
+<th class="r header" scope="col">PSE_enthu</th>
+<th class="r header" scope="col">durInt</th>
+<th class="r header" scope="col">durFin</th>
+<th class="r header" scope="col">EffInt</th>
+<th class="r header" scope="col">EffFin</th>
+<th class="r header" scope="col">FutInt</th>
+<th class="r header" scope="col">FutFin</th>
+<th class="r header" scope="col">FutCrit1</th>
+<th class="r header" scope="col">FutCrit2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">20</th>
+<td class="r data">1</td>
+<td class="r data">0.40</td>
+<td class="r data">10000</td>
+<td class="r data">2.8937</td>
+<td class="r data">23.7874</td>
+<td class="r data">9.5225</td>
+<td class="r data">14.2649</td>
+<td class="r data">3.5607</td>
+<td class="r data">24.0743</td>
+<td class="r data">9.6342</td>
+<td class="r data">14.4401</td>
+<td class="r data">0.38519</td>
+<td class="r data">0.08757</td>
+<td class="r data">0.03034</td>
+<td class="r data">0.49822</td>
+<td class="r data">0.11161</td>
+<td class="r data">0.12467</td>
+<td class="r data">0.67460</td>
+<td class="r data">0.06442</td>
+<td class="r data">15.0729</td>
+<td class="r data">15.1995</td>
+<td class="r data">0.1002</td>
+<td class="r data">0.0949</td>
+<td class="r data">0.9016</td>
+<td class="r data">0.9016</td>
+<td class="r data">0.0138</td>
+<td class="r data">0.9011</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">21</th>
+<td class="r data">1</td>
+<td class="r data">0.42</td>
+<td class="r data">10000</td>
+<td class="r data">3.3403</td>
+<td class="r data">24.6806</td>
+<td class="r data">10.3546</td>
+<td class="r data">14.3260</td>
+<td class="r data">3.5000</td>
+<td class="r data">25.0768</td>
+<td class="r data">10.5206</td>
+<td class="r data">14.5562</td>
+<td class="r data">0.40369</td>
+<td class="r data">0.12413</td>
+<td class="r data">0.04515</td>
+<td class="r data">0.54590</td>
+<td class="r data">0.15087</td>
+<td class="r data">0.16399</td>
+<td class="r data">0.63883</td>
+<td class="r data">0.06180</td>
+<td class="r data">15.5350</td>
+<td class="r data">15.7121</td>
+<td class="r data">0.1398</td>
+<td class="r data">0.1337</td>
+<td class="r data">0.8616</td>
+<td class="r data">0.8616</td>
+<td class="r data">0.0117</td>
+<td class="r data">0.8608</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">22</th>
+<td class="r data">1</td>
+<td class="r data">0.44</td>
+<td class="r data">10000</td>
+<td class="r data">3.7362</td>
+<td class="r data">25.4724</td>
+<td class="r data">11.1866</td>
+<td class="r data">14.2858</td>
+<td class="r data">3.4995</td>
+<td class="r data">26.0365</td>
+<td class="r data">11.4365</td>
+<td class="r data">14.6000</td>
+<td class="r data">0.42424</td>
+<td class="r data">0.17712</td>
+<td class="r data">0.06781</td>
+<td class="r data">0.59763</td>
+<td class="r data">0.21039</td>
+<td class="r data">0.21773</td>
+<td class="r data">0.59713</td>
+<td class="r data">0.06254</td>
+<td class="r data">15.9805</td>
+<td class="r data">16.2268</td>
+<td class="r data">0.1962</td>
+<td class="r data">0.1897</td>
+<td class="r data">0.8027</td>
+<td class="r data">0.8027</td>
+<td class="r data">0.0080</td>
+<td class="r data">0.8019</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">23</th>
+<td class="r data">1</td>
+<td class="r data">0.46</td>
+<td class="r data">10000</td>
+<td class="r data">4.2062</td>
+<td class="r data">26.4124</td>
+<td class="r data">12.2084</td>
+<td class="r data">14.2040</td>
+<td class="r data">3.4238</td>
+<td class="r data">27.2379</td>
+<td class="r data">12.5872</td>
+<td class="r data">14.6507</td>
+<td class="r data">0.44818</td>
+<td class="r data">0.25588</td>
+<td class="r data">0.10087</td>
+<td class="r data">0.65740</td>
+<td class="r data">0.29476</td>
+<td class="r data">0.29728</td>
+<td class="r data">0.54453</td>
+<td class="r data">0.07223</td>
+<td class="r data">16.3787</td>
+<td class="r data">16.7368</td>
+<td class="r data">0.2797</td>
+<td class="r data">0.2716</td>
+<td class="r data">0.7175</td>
+<td class="r data">0.7175</td>
+<td class="r data">0.0046</td>
+<td class="r data">0.7167</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">24</th>
+<td class="r data">1</td>
+<td class="r data">0.48</td>
+<td class="r data">10000</td>
+<td class="r data">4.5591</td>
+<td class="r data">27.1182</td>
+<td class="r data">13.0110</td>
+<td class="r data">14.1072</td>
+<td class="r data">3.3358</td>
+<td class="r data">28.1331</td>
+<td class="r data">13.4973</td>
+<td class="r data">14.6358</td>
+<td class="r data">0.46829</td>
+<td class="r data">0.32600</td>
+<td class="r data">0.13294</td>
+<td class="r data">0.70535</td>
+<td class="r data">0.36559</td>
+<td class="r data">0.36587</td>
+<td class="r data">0.49991</td>
+<td class="r data">0.07792</td>
+<td class="r data">16.8113</td>
+<td class="r data">17.2616</td>
+<td class="r data">0.3521</td>
+<td class="r data">0.3429</td>
+<td class="r data">0.6438</td>
+<td class="r data">0.6438</td>
+<td class="r data">0.0033</td>
+<td class="r data">0.6429</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">25</th>
+<td class="r data">1</td>
+<td class="r data">0.50</td>
+<td class="r data">10000</td>
+<td class="r data">4.6497</td>
+<td class="r data">27.2994</td>
+<td class="r data">13.6822</td>
+<td class="r data">13.6172</td>
+<td class="r data">3.2985</td>
+<td class="r data">28.6328</td>
+<td class="r data">14.3547</td>
+<td class="r data">14.2781</td>
+<td class="r data">0.49368</td>
+<td class="r data">0.42272</td>
+<td class="r data">0.18393</td>
+<td class="r data">0.76041</td>
+<td class="r data">0.46545</td>
+<td class="r data">0.45825</td>
+<td class="r data">0.44021</td>
+<td class="r data">0.08704</td>
+<td class="r data">16.9100</td>
+<td class="r data">17.4987</td>
+<td class="r data">0.4527</td>
+<td class="r data">0.4444</td>
+<td class="r data">0.5435</td>
+<td class="r data">0.5435</td>
+<td class="r data">0.0023</td>
+<td class="r data">0.5425</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">26</th>
+<td class="r data">1</td>
+<td class="r data">0.52</td>
+<td class="r data">10000</td>
+<td class="r data">4.6561</td>
+<td class="r data">27.3122</td>
+<td class="r data">14.2090</td>
+<td class="r data">13.1032</td>
+<td class="r data">3.2529</td>
+<td class="r data">28.9271</td>
+<td class="r data">15.0489</td>
+<td class="r data">13.8782</td>
+<td class="r data">0.51638</td>
+<td class="r data">0.51314</td>
+<td class="r data">0.23181</td>
+<td class="r data">0.80668</td>
+<td class="r data">0.55418</td>
+<td class="r data">0.54149</td>
+<td class="r data">0.38726</td>
+<td class="r data">0.09496</td>
+<td class="r data">16.8685</td>
+<td class="r data">17.5769</td>
+<td class="r data">0.5428</td>
+<td class="r data">0.5343</td>
+<td class="r data">0.4553</td>
+<td class="r data">0.4553</td>
+<td class="r data">0.0015</td>
+<td class="r data">0.4544</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">27</th>
+<td class="r data">1</td>
+<td class="r data">0.54</td>
+<td class="r data">10000</td>
+<td class="r data">4.5085</td>
+<td class="r data">27.0170</td>
+<td class="r data">14.5621</td>
+<td class="r data">12.4549</td>
+<td class="r data">3.2605</td>
+<td class="r data">28.9630</td>
+<td class="r data">15.6069</td>
+<td class="r data">13.3561</td>
+<td class="r data">0.53802</td>
+<td class="r data">0.60012</td>
+<td class="r data">0.28212</td>
+<td class="r data">0.84698</td>
+<td class="r data">0.64277</td>
+<td class="r data">0.62832</td>
+<td class="r data">0.33579</td>
+<td class="r data">0.10243</td>
+<td class="r data">16.6939</td>
+<td class="r data">17.5289</td>
+<td class="r data">0.6332</td>
+<td class="r data">0.6250</td>
+<td class="r data">0.3635</td>
+<td class="r data">0.3635</td>
+<td class="r data">0.0006</td>
+<td class="r data">0.3630</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">28</th>
+<td class="r data">1</td>
+<td class="r data">0.56</td>
+<td class="r data">10000</td>
+<td class="r data">4.3032</td>
+<td class="r data">26.6064</td>
+<td class="r data">14.9182</td>
+<td class="r data">11.6882</td>
+<td class="r data">3.2423</td>
+<td class="r data">28.9013</td>
+<td class="r data">16.2131</td>
+<td class="r data">12.6882</td>
+<td class="r data">0.56384</td>
+<td class="r data">0.70072</td>
+<td class="r data">0.34766</td>
+<td class="r data">0.89073</td>
+<td class="r data">0.73851</td>
+<td class="r data">0.71950</td>
+<td class="r data">0.27631</td>
+<td class="r data">0.10700</td>
+<td class="r data">16.4595</td>
+<td class="r data">17.4379</td>
+<td class="r data">0.7298</td>
+<td class="r data">0.7219</td>
+<td class="r data">0.2667</td>
+<td class="r data">0.2667</td>
+<td class="r data">0.0006</td>
+<td class="r data">0.2664</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">29</th>
+<td class="r data">1</td>
+<td class="r data">0.58</td>
+<td class="r data">10000</td>
+<td class="r data">3.9863</td>
+<td class="r data">25.9726</td>
+<td class="r data">15.0515</td>
+<td class="r data">10.9211</td>
+<td class="r data">3.2673</td>
+<td class="r data">28.5397</td>
+<td class="r data">16.5382</td>
+<td class="r data">12.0015</td>
+<td class="r data">0.58461</td>
+<td class="r data">0.77888</td>
+<td class="r data">0.39511</td>
+<td class="r data">0.92077</td>
+<td class="r data">0.81253</td>
+<td class="r data">0.79243</td>
+<td class="r data">0.23077</td>
+<td class="r data">0.10946</td>
+<td class="r data">16.1347</td>
+<td class="r data">17.2230</td>
+<td class="r data">0.8063</td>
+<td class="r data">0.7990</td>
+<td class="r data">0.1902</td>
+<td class="r data">0.1902</td>
+<td class="r data">0.0002</td>
+<td class="r data">0.1900</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">30</th>
+<td class="r data">1</td>
+<td class="r data">0.60</td>
+<td class="r data">10000</td>
+<td class="r data">3.3891</td>
+<td class="r data">24.7782</td>
+<td class="r data">14.8747</td>
+<td class="r data">9.9035</td>
+<td class="r data">3.3257</td>
+<td class="r data">27.6181</td>
+<td class="r data">16.5858</td>
+<td class="r data">11.0323</td>
+<td class="r data">0.60732</td>
+<td class="r data">0.83994</td>
+<td class="r data">0.45829</td>
+<td class="r data">0.94344</td>
+<td class="r data">0.86643</td>
+<td class="r data">0.84837</td>
+<td class="r data">0.18788</td>
+<td class="r data">0.10147</td>
+<td class="r data">15.4877</td>
+<td class="r data">16.6784</td>
+<td class="r data">0.8620</td>
+<td class="r data">0.8573</td>
+<td class="r data">0.1361</td>
+<td class="r data">0.1361</td>
+<td class="r data">0.0003</td>
+<td class="r data">0.1359</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">31</th>
+<td class="r data">1</td>
+<td class="r data">0.62</td>
+<td class="r data">10000</td>
+<td class="r data">2.9450</td>
+<td class="r data">23.8900</td>
+<td class="r data">14.8506</td>
+<td class="r data">9.0394</td>
+<td class="r data">3.3712</td>
+<td class="r data">26.9516</td>
+<td class="r data">16.7515</td>
+<td class="r data">10.2001</td>
+<td class="r data">0.62896</td>
+<td class="r data">0.89572</td>
+<td class="r data">0.50785</td>
+<td class="r data">0.96459</td>
+<td class="r data">0.91659</td>
+<td class="r data">0.89859</td>
+<td class="r data">0.14838</td>
+<td class="r data">0.09475</td>
+<td class="r data">14.9743</td>
+<td class="r data">16.2570</td>
+<td class="r data">0.9143</td>
+<td class="r data">0.9101</td>
+<td class="r data">0.0852</td>
+<td class="r data">0.0852</td>
+<td class="r data">0.0002</td>
+<td class="r data">0.0850</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">32</th>
+<td class="r data">1</td>
+<td class="r data">0.64</td>
+<td class="r data">10000</td>
+<td class="r data">2.5456</td>
+<td class="r data">23.0912</td>
+<td class="r data">14.7506</td>
+<td class="r data">8.3406</td>
+<td class="r data">3.3752</td>
+<td class="r data">26.2695</td>
+<td class="r data">16.7898</td>
+<td class="r data">9.4797</td>
+<td class="r data">0.64624</td>
+<td class="r data">0.92985</td>
+<td class="r data">0.54048</td>
+<td class="r data">0.97549</td>
+<td class="r data">0.94509</td>
+<td class="r data">0.92879</td>
+<td class="r data">0.12231</td>
+<td class="r data">0.08660</td>
+<td class="r data">14.5274</td>
+<td class="r data">15.8459</td>
+<td class="r data">0.9439</td>
+<td class="r data">0.9416</td>
+<td class="r data">0.0562</td>
+<td class="r data">0.0562</td>
+<td class="r data">0.0001</td>
+<td class="r data">0.0561</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">33</th>
+<td class="r data">1</td>
+<td class="r data">0.66</td>
+<td class="r data">10000</td>
+<td class="r data">2.1420</td>
+<td class="r data">22.2840</td>
+<td class="r data">14.7192</td>
+<td class="r data">7.5648</td>
+<td class="r data">3.4560</td>
+<td class="r data">25.6304</td>
+<td class="r data">16.9175</td>
+<td class="r data">8.7129</td>
+<td class="r data">0.66670</td>
+<td class="r data">0.95818</td>
+<td class="r data">0.56141</td>
+<td class="r data">0.98665</td>
+<td class="r data">0.97007</td>
+<td class="r data">0.95640</td>
+<td class="r data">0.09549</td>
+<td class="r data">0.07614</td>
+<td class="r data">14.1603</td>
+<td class="r data">15.5378</td>
+<td class="r data">0.9693</td>
+<td class="r data">0.9675</td>
+<td class="r data">0.0302</td>
+<td class="r data">0.0302</td>
+<td class="r data">0.0000</td>
+<td class="r data">0.0302</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">34</th>
+<td class="r data">1</td>
+<td class="r data">0.68</td>
+<td class="r data">10000</td>
+<td class="r data">1.8287</td>
+<td class="r data">21.6574</td>
+<td class="r data">14.7243</td>
+<td class="r data">6.9331</td>
+<td class="r data">3.4373</td>
+<td class="r data">25.0368</td>
+<td class="r data">17.0228</td>
+<td class="r data">8.0140</td>
+<td class="r data">0.68577</td>
+<td class="r data">0.97307</td>
+<td class="r data">0.57189</td>
+<td class="r data">0.99242</td>
+<td class="r data">0.98320</td>
+<td class="r data">0.97241</td>
+<td class="r data">0.07557</td>
+<td class="r data">0.06483</td>
+<td class="r data">13.8417</td>
+<td class="r data">15.2513</td>
+<td class="r data">0.9832</td>
+<td class="r data">0.9814</td>
+<td class="r data">0.0170</td>
+<td class="r data">0.0170</td>
+<td class="r data">0.0000</td>
+<td class="r data">0.0170</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">35</th>
+<td class="r data">1</td>
+<td class="r data">0.70</td>
+<td class="r data">10000</td>
+<td class="r data">1.5710</td>
+<td class="r data">21.1420</td>
+<td class="r data">14.8028</td>
+<td class="r data">6.3392</td>
+<td class="r data">3.5200</td>
+<td class="r data">24.6352</td>
+<td class="r data">17.2410</td>
+<td class="r data">7.3942</td>
+<td class="r data">0.70452</td>
+<td class="r data">0.98497</td>
+<td class="r data">0.56686</td>
+<td class="r data">0.99652</td>
+<td class="r data">0.99235</td>
+<td class="r data">0.98346</td>
+<td class="r data">0.05822</td>
+<td class="r data">0.05333</td>
+<td class="r data">13.5750</td>
+<td class="r data">15.0070</td>
+<td class="r data">0.9925</td>
+<td class="r data">0.9916</td>
+<td class="r data">0.0077</td>
+<td class="r data">0.0077</td>
+<td class="r data">0.0000</td>
+<td class="r data">0.0077</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">36</th>
+<td class="r data">1</td>
+<td class="r data">0.72</td>
+<td class="r data">10000</td>
+<td class="r data">1.3940</td>
+<td class="r data">20.7880</td>
+<td class="r data">14.9262</td>
+<td class="r data">5.8618</td>
+<td class="r data">3.5751</td>
+<td class="r data">24.3431</td>
+<td class="r data">17.4774</td>
+<td class="r data">6.8657</td>
+<td class="r data">0.72152</td>
+<td class="r data">0.98729</td>
+<td class="r data">0.54423</td>
+<td class="r data">0.99763</td>
+<td class="r data">0.99474</td>
+<td class="r data">0.98778</td>
+<td class="r data">0.04682</td>
+<td class="r data">0.04345</td>
+<td class="r data">13.3837</td>
+<td class="r data">14.8276</td>
+<td class="r data">0.9947</td>
+<td class="r data">0.9943</td>
+<td class="r data">0.0052</td>
+<td class="r data">0.0052</td>
+<td class="r data">0.0000</td>
+<td class="r data">0.0052</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">37</th>
+<td class="r data">1</td>
+<td class="r data">0.74</td>
+<td class="r data">10000</td>
+<td class="r data">1.2164</td>
+<td class="r data">20.4328</td>
+<td class="r data">15.1201</td>
+<td class="r data">5.3127</td>
+<td class="r data">3.5538</td>
+<td class="r data">23.9798</td>
+<td class="r data">17.7276</td>
+<td class="r data">6.2522</td>
+<td class="r data">0.74153</td>
+<td class="r data">0.98765</td>
+<td class="r data">0.50600</td>
+<td class="r data">0.99898</td>
+<td class="r data">0.99798</td>
+<td class="r data">0.99270</td>
+<td class="r data">0.03515</td>
+<td class="r data">0.03382</td>
+<td class="r data">13.2139</td>
+<td class="r data">14.6753</td>
+<td class="r data">0.9980</td>
+<td class="r data">0.9979</td>
+<td class="r data">0.0020</td>
+<td class="r data">0.0020</td>
+<td class="r data">0.0000</td>
+<td class="r data">0.0020</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">38</th>
+<td class="r data">1</td>
+<td class="r data">0.76</td>
+<td class="r data">10000</td>
+<td class="r data">1.1444</td>
+<td class="r data">20.2888</td>
+<td class="r data">15.4085</td>
+<td class="r data">4.8803</td>
+<td class="r data">3.5770</td>
+<td class="r data">23.8597</td>
+<td class="r data">18.1233</td>
+<td class="r data">5.7364</td>
+<td class="r data">0.76126</td>
+<td class="r data">0.98296</td>
+<td class="r data">0.45703</td>
+<td class="r data">0.99934</td>
+<td class="r data">0.99850</td>
+<td class="r data">0.99445</td>
+<td class="r data">0.02615</td>
+<td class="r data">0.02517</td>
+<td class="r data">13.1428</td>
+<td class="r data">14.6015</td>
+<td class="r data">0.9985</td>
+<td class="r data">0.9985</td>
+<td class="r data">0.0015</td>
+<td class="r data">0.0015</td>
+<td class="r data">0.0000</td>
+<td class="r data">0.0015</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>
